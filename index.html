@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <a class="logoAlura" href="https://www.alura.com.br/"> <img src="Assets/logoAlura.svg" alt="Logo da Alura"></a>
+    </header>
+
+    <main>
+        <section>
+            <textarea class="textArea" placeholder="Digite seu texto" id="idCriptografar" cols="40" rows="4"></textarea>
+            <h6 class="aviso"><img src="Assets/imagemExclamacao.svg" alt="Atenção"> Apenas letras maiúsculas e sem acentuação.</h6> 
+            <div class="botoesBtn">
+                <button class="btnCriptografar" onclick= "btnCriptografar()">Criptografar</button>
+                <button class="btnDescriptografar" onclick= "btnDescriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section class="mensagem">
+            <textarea class="areaMensagem" placeholder="" id="idMensagem" cols="20" rows="10"></textarea>
+            <div>
+                <button class="areaMensagem_btn" onclick="copiarTexto(), myFunction()">Copiar
+                  <!--  
+                      <span class="popuptext" id="myPopup">Texto copiado para a área de transferência</span>
+                -->
+                </button>
+                <button class="areaMensagem_btn" onclick="limparTexto()">Limpar</button>
+               <!-- <button class="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                <button class="btnLimpar" onclick="limparTexto()">Limpar</button> -->
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p>
+        Desenvolvido por <a class="link" href="https://github.com/tamissp">Tms</a>.
+    </p>
+    
+</footer>
+
+</html>
